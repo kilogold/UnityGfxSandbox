@@ -7,11 +7,12 @@ This technique is implemented using a well-known approach for creating the illus
 The shadergraph is quite simple:
 ![ShaderGraph](https://github.com/kilogold/UnityGfxSandbox/blob/master/ReadMe/Img2.png?raw=true)
 
-The magic is actually contained in a custom shader function node, which references [ParallaxShaderFunc.hlsl](https://github.com/kilogold/UnityGfxSandbox/blob/master/Assets/ParallaxShaderFunc.hlsl).
+The magic is actually contained in a custom shader function node, which references [ParallaxShaderFunc.hlsl](https://github.com/kilogold/UnityGfxSandbox/blob/master/Assets/Sandboxes/Parallax/ParallaxShaderFunc.hlsl).
  I took the concept from an OpenGL tutorial [here](https://learnopengl.com/Advanced-Lighting/Parallax-Mapping).
 
 ## Fresnel Effect
 ![Demo](https://github.com/kilogold/UnityGfxSandbox/blob/master/ReadMe/Fresnel.gif?raw=true)
+
 Although Shadergraph already comes with a [Fresnel node]([https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Fresnel-Effect-Node.html](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Fresnel-Effect-Node.html)), I decided to blindly implement my own.
 For this experiment, I chose to explore without reading any information or Unity docs on the subject. 
 My only tools were in my imagination (and engine, of course). 
